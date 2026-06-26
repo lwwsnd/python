@@ -1,6 +1,12 @@
-print('请输入一个有理数')
-x=float(input())
-if x>5:
-    print('x>5')
-else:
-    print('x<5')
+'''
+a,b=0,1
+while b<100:
+    print(b,end=' ')
+    a,b=b,a+b
+'''
+
+n=10
+a,b=0,1
+for i in range(n):
+    print(b,end=' ')
+    a,b=b,a+b
