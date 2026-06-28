@@ -1,5 +1,5 @@
 def a000(i):
-    pass
+    ...
 def a010(i):
     x[i]=1
 def a110(i):
@@ -24,8 +24,6 @@ def main():
     x=[0]*(max_len+1)
     b.reverse()#列表翻转
     c.reverse()
-    print(b)
-    print(c)
     for i in range(len(b)):
         match b[i],c[i]:
             case 0,0:
@@ -45,9 +43,7 @@ def main():
                 a011(i)
             case 1,1 if x[i]==1:
                 a111(i)
-    print(x)
     x.reverse()
-    print(x)
     qw=int(''.join(map(str,x)),2)
 
     print(qw)
